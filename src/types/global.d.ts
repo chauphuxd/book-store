@@ -50,6 +50,10 @@ declare global {
         user: IUser
     }
 
+    interface IRefreshAccount {
+        access_token: string
+    }
+
 
     interface IUserTable {
         _id: string,

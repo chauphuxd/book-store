@@ -224,7 +224,7 @@ export default function TableBook() {
                 }}
                 headerTitle="Table Book"
                 toolBarRender={() => [
-                    <CSVLink data={currenDataTable} filename='export-book.csv'>
+                    <CSVLink data={currenDataTable} filename='export-book.csv' >
                         <Button
                             key="button"
                             icon={<ExportOutlined />}

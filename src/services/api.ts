@@ -9,7 +9,6 @@ export const loginAPI = (values: { [key: string]: any }) => {
         }
     })
 }
-
 export const registerAPI = (values: { [key: string]: any }) => {
     const urlBackEnd = "/api/v1/user/register"
     return axios.post<IBackendRes<IRegister>>(urlBackEnd, values)
@@ -22,6 +21,11 @@ export const fetchAccountAPI = () => {
             delay: 1000
         }
     })
+}
+
+export const refreshAccountAPI = () => {
+    const urlBackEnd = "/api/v1/auth/refresh"
+    return axios.get<IBackendRes<IRefreshAccount>>(urlBackEnd,)
 }
 
 export const logoutAPI = () => {
